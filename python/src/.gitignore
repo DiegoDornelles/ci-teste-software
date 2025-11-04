@@ -1,0 +1,10 @@
+# Ignorar ambiente virtual e caches
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Arquivos temporários e de sistema
+.vscode/
+*.log
+*.tmp
