@@ -6,7 +6,7 @@ O foco foi aplicar práticas de **TDD**, **mocks/stubs**, **testes parametrizado
 
 ------
 
-## ⚙️ Estrutura do Projeto
+## Estrutura do Projeto
 ci-teste-software/
 ├── .github/
 │ └── workflows/
@@ -34,11 +34,11 @@ ci-teste-software/
 
 ------
 
-## ⚙️ Execução Local
+## Execução Local
 
 1. **Ativar o ambiente virtual**
    ```bash
-   venv\Scripts\activate
+   venv\ Scripts\ activate
 ------
 Instalar as dependências:
 pip install -r python/requirements.txt
