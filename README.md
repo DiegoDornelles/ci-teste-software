@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Trabalho N2 — Teste de Software (Python + Pytest)
 
 ## Objetivos
@@ -9,6 +10,19 @@ O foco foi aplicar práticas de **TDD**, uso de **mocks/stubs**, **testes parame
 
 ## Estrutura do Projeto
 
+=======
+# 🧪 Trabalho N2 — Teste de Software (Python + Pytest)
+
+## 🎯 Objetivos
+
+Este projeto implementa o **Cenário de Faturamento e Pagamentos**, conforme o enunciado do Trabalho N2.  
+O foco foi aplicar práticas de **TDD**, uso de **mocks/stubs**, **testes parametrizados**, **ciclo de vida com fixtures**, e **pipeline de CI (GitHub Actions)** com **relatório de cobertura** automatizado.
+
+---
+
+## 🧱 Estrutura do Projeto
+
+>>>>>>> 94e7dba (Atualiza README principal)
 ci-teste-software/
 ├──
 .github/
@@ -37,36 +51,29 @@ ci-teste-software/
 
 ---
 
-## Execução no Terminal
+## ⚙️ Execução Local
 
-Ativar o ambiente virtual:
-
+1. **Ativar o ambiente virtual**
    ```bash
    venv\Scripts\activate
----
-Instalar as dependências:
+Instalar as dependências
+
 bash
 Copiar código
 pip install -r python/requirements.txt
+Executar os testes
 
----
-
-Executar os testes:
 bash
 Copiar código
 python -m pytest -v
+Gerar relatório de cobertura
 
------------
-
-Gerar relatório de cobertura:
 bash
 Copiar código
 python -m coverage run -m pytest
 python -m coverage html
+Abrir o relatório no navegador
 
------------
-
-Abrir o relatório no navegador:
 bash
 Copiar código
 start python/htmlcov/index.html
