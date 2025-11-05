@@ -1,33 +1,35 @@
-name: ci
+name: CI - Testes e Cobertura
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # Permite rodar manualmente
 
 jobs:
-  python:
+  build:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: python  # 👈 aponta para a pasta correta
 
     steps:
       - name: Baixar código
         uses: actions/checkout@v4
 
-      - name: Configurar python
+      - name: Configurar Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.13'
 
       - name: Instalar dependências
         run: |
-          cd python
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Executar testes com cobertura
         run: |
-          cd python
-          coverage run -m pytest -q
-          coverage html && coverage xml
-
-      - name: Salvar relatório de cobertura
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage-py
-          path: python/htmlcov
+          coverage run -m pytest
+          coverage report
