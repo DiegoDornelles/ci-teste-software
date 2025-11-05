@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Trabalho N2 — Teste de Software (Python + Pytest)
 
 ## Objetivos
@@ -11,16 +10,16 @@ O foco foi aplicar práticas de **TDD**, uso de **mocks/stubs**, **testes parame
 ## Estrutura do Projeto
 
 =======
-# 🧪 Trabalho N2 — Teste de Software (Python + Pytest)
+# Trabalho N2 — Teste de Software (Python + Pytest)
 
-## 🎯 Objetivos
+## Objetivos
 
 Este projeto implementa o **Cenário de Faturamento e Pagamentos**, conforme o enunciado do Trabalho N2.  
 O foco foi aplicar práticas de **TDD**, uso de **mocks/stubs**, **testes parametrizados**, **ciclo de vida com fixtures**, e **pipeline de CI (GitHub Actions)** com **relatório de cobertura** automatizado.
 
 ---
 
-## 🧱 Estrutura do Projeto
+## Estrutura do Projeto
 
 >>>>>>> 94e7dba (Atualiza README principal)
 ci-teste-software/
@@ -51,7 +50,7 @@ ci-teste-software/
 
 ---
 
-## ⚙️ Execução Local
+## Execução Local
 
 1. **Ativar o ambiente virtual**
    ```bash
